@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+
+li, a, button{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+}
+header{
+    background-image: linear-gradient(#ffffff, #ffffff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8%;
+}
+#logo{
+    width: 180px;
+    height: 90px;
+}
+.nav-links{
+    transition: all 0.2s ease 0s;
+}
+.nav-links li{
+    display:inline-block;
+    padding: 0px 60px;
+}
+.nav-links li a{
+    transition: all 0.2s ease 0s;
+}
+.nav-links li a:hover{
+    color: #005f73;
+}
+button{
+    padding: 9px 30px;
+    background-color: #0a9396;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+button:hover{
+    background-color: #005f73;
+}
+
+@media screen and (max-width: 1080px) {
+    button{
+        display: none;
+    }
+    .nav-links li{
+        padding: 0px 10px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .nav-links {
+        display: none;
+    }
+    header{
+        display: block;
+        text-align: right;
+    }
+}
